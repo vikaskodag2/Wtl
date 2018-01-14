@@ -6,3 +6,4 @@ git commit -m 'msg'
 
 to commit repo
 git remote add origin https://github.com/vikaskodag2/Wtl
+git push -u origin master
