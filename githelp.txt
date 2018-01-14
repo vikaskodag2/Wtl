@@ -1,0 +1,8 @@
+to add files for commit
+git add .
+
+to commit 
+git commit -m 'msg'
+
+to commit repo
+git remote add origin https://github.com/vikaskodag2/Wtl
