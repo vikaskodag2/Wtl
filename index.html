@@ -4,9 +4,12 @@
 <head>
 	<meta charset = "UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="description" content="Pizza App Pizza Order">
+    <meta name="author" content="Vikas Kodag">
+
 	<title>Pizza App</title>
 	
-	<!-- css file -->
+	<!-- Custom styles -->
 	<link href = "style.css" rel = "stylesheet">
 	
 	<!-- bootstrap refrence -->
@@ -18,38 +21,37 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
 </head>
 
-<body id="page-top">
+<body id = "page-top">
 
 	<!--Navigation -->
-	<nav clas = "navbar navbar-dark fixed-top" id = "main_nav">
-		<div class = "container">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">Pizza App</a>
-			<button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				Menu
-				<i class = "fa fa-bars"></i>
-			</button>
-			<div class = "collapse collapse-navbar" id = "navbarResponsive">
-				<!--ml-auto : set the margin-left to auto -->
-				<!-- user reviews can be added || ref(about us) --> 
-				<ul class = "navbar-nav text-upparcase ml-auto">
-					<li class = "nav-item">
-						<a class="nav-link js-scroll-trigger" href="#hot_picks">Hot Picks</a>
-					</li>
-					<li class = "nav-item">
-						<a class="nav-link js-scroll-trigger" href="#popular_picks">Popular picks</a>
-					</li>
-					<li class = "nav-item">
-						<a class="nav-link js-scroll-trigger" href="#team">Team</a>
-					</li>
-					<li class = "nav-item">
-						<a class="nav-link js-scroll-trigger" href="#contact_us">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<nav class = "navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class = "container">
+        <a class = "navbar-brand js-scroll-trigger" href = "#page-top">Pizza App</a>
+        <button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive" aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
+          Menu
+          <i class = "fa fa-bars"></i>
+        </button>
+        <div class = "collapse navbar-collapse" id  ="navbarResponsive">
+          <ul class = "navbar-nav text-uppercase ml-auto">
+            <li class = "nav-item">
+              <a class = "nav-link js-scroll-trigger" href = "#hot_picks">Hot Picks</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link js-scroll-trigger" href = "#popular_picks">Popular Picks</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link js-scroll-trigger" href = "#peoples_comments">Peoples Comments</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link js-scroll-trigger" href = "#team">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 	
 	<!-- Header -->
 	<header class = "master-head">
@@ -104,37 +106,36 @@
 
 	<!-- Explore more -->
 	<section class = "bg-light" id = "popular_picks">
-		<div class = "conatiner">
+		<div class = "container">
 			<div class = "row">
 				<div class = "col-lg-12 text-center">
-					<h2 class = "section_heading text-uppercase">popular picks</h2>
+					<h2 class = "section-heading text-uppercase">popular picks</h2>
 					<h3 class = "section-subheading text-muted">Most eaten pizza</h3>
 				</div>
 			</div>
 			<div class = "row">
 				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<!-- Change all modals and their contents according to ur needs -->
-					<a class="popular_picks-link" data-toggle = "model" href = "#popular_picks-Modal1">
+					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal1">
 						<div class = "popular_picks-hover">
 							<div class = "popular_picks-hover-content">
 								<i class = "fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class = "img-fluid" src="put_the_image_path!!!!!!!">
+						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
 					</a>
 					<div class = "popular_picks-caption">
 						<h4>Pizza 1</h4>
-						<p class = "text-muted">Pizza 1 descriptiob</p>
+						<p class = "text-muted">Pizza 1 description</p>
 					</div>
 				</div>
 				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "model" href = "#popular_picks-Modal2">
+					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal2">
 						<div class = "popular_picks-hover">
 							<div class = "popular_picks-hover-content">
 								<i class = "fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class = "img-fluid" src="put_the_image_path!!!!!!!">
+						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
 					</a>
 					<div class = "popular_picks-caption">
 						<h4>Pizza 2</h4>
@@ -142,13 +143,13 @@
 					</div>
 				</div>
 				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="about_us-link" data-toggle = "model" href = "#popular_picks-Modal3">
+					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal3">
 						<div class = "popular_picks-hover">
 							<div class = "popular_picks-hover-content">
 								<i class = "fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class = "img-fluid" src="put_the_image_path!!!!!!!">
+						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
 					</a>
 					<div class = "popular_picks-caption">
 						<h4>Pizza 3</h4>
@@ -156,46 +157,128 @@
 					</div>
 				</div>
 				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "model" href = "#popular_picks-Modal4">
+					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal4">
 						<div class = "popular_picks-hover">
 							<div class = "popular_picks-hover_p-content">
 								<i class = "fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class = "img-fluid" src="put_the_image_path!!!!!!!">
+						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
 					</a>
 					<div class = "popular_picks-caption">
 						<h4>Pizza 4</h4>
 						<p class = "text-muted">Pizza 3 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 about_us-item">
-					<a class="popular_picks-link" data-toggle = "model" href = "#popular_picks-Modal5">
-						<div class = "about_us-hover">
+				<div class = "col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal5">
+						<div class = "popular_picks-hover">
 							<div class = "popular_picks-hover-content">
 								<i class = "fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class = "img-fluid" src="put_the_image_path!!!!!!!">
+						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
 					</a>
 					<div class = "popular_picks-caption">
 						<h4>Pizza 5</h4>
 						<p class = "text-muted">Pizza 5 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 about_us-item">
-					<a class="popular_picks-link" data-toggle = "model" href = "#popular_picks-Modal6">
+				<div class = "col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal6">
 						<div class = "popular_picks-hover">
 							<div class = "popular_picks-hover-content">
 								<i class = "fa fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class = "img-fluid" src="put_the_image_path!!!!!!!">
+						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
 					</a>
-					<div class = "about_us-caption">
+					<div class = "popular_picks-caption">
 						<h4>Pizza 6 </h4>
 						<p class = "text-muted">Pizza 6 description</p>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- people comments -->
+	<section id = "peoples_comments">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-lg-12 text-center">
+					<h2 class = "section-heading text-uppercase">Comments</h2>
+					<h3 class = "section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-lg-12">
+					<ul class = "timeline">
+						<li>
+							<div class = "timeline-image">
+								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
+							</div>
+							<div class = "timeline-panel">
+								<div class = "timeline-heading">
+									<h4>Commentor 1</h4>
+									<h4 class = "subheading">Lorem ipsum dolor sit.</h4>
+								</div>
+								<div class = "timeline-body">
+									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li class = "timeline-inverted">
+							<div class = "timeline-image">
+								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
+							</div>
+							<div class = "timeline-panel">
+								<div class = "timeline-heading">
+									<h4>Commentor 2</h4>
+									<h4 class = "subheading">Lorem ipsum dolor sit.</h4>
+								</div>
+								<div class = "timeline-body">
+									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class = "timeline-image">
+								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
+							</div>
+							<div class = "timeline-panel">
+								<div class = "timeline-heading">
+									<h4>Commentor 3</h4>
+									<h4 class = "subheading">Lorem ipsum dolor sit.</h4>
+								</div>
+								<div class = "timeline-body">
+									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li class = "timeline-inverted">
+							<div class = "timeline-image">
+								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
+							</div>
+							<div class = "timeline-panel">
+								<div class = "timeline-heading">
+									<h4>Commentor 4</h4>
+									<h4 class = "subheading">Lorem ipsum dolor sit.</h4>
+								</div>
+								<div class = "timeline-body">
+									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted">
+               	 			<div class="timeline-image">
+                  				<h4>Be Part
+                    				<br>Of Our
+                    				<br>Story!
+                    			</h4>
+                			</div>
+              			</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -213,7 +296,7 @@
 			<div class = "row">
 				<div class="col-sm-4">
             		<div class="team-member">
-              			<img class="mx-auto rounded-circle" src="team_member_1_image_path" alt="">
+              			<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
               			<h4>Member 1</h4>
               			<p class="text-muted">Designation</p>
               			<!-- link below links with their social media -->
@@ -238,7 +321,7 @@
           		</div>
           		<div class="col-sm-4">
             		<div class="team-member">
-              			<img class="mx-auto rounded-circle" src="team_member_2_image_path" alt="">
+              			<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
               			<h4>Member 2</h4>
               			<p class="text-muted">Designation</p>
               			<!-- link below links with their social media -->
@@ -263,7 +346,7 @@
           		</div>
           		<div class="col-sm-4">
             		<div class="team-member">
-              			<img class="mx-auto rounded-circle" src="team_member_3_image_path" alt="">
+              			<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
               			<h4>Member 3</h4>
               			<p class="text-muted">Designation</p>
               			<!-- link below links with their social media -->
@@ -304,7 +387,7 @@
 
 	<!-- put order-page link on modal button. Currently not added -->
 	<!-- Modal 1 -->
-	<div class = "popular_picks-modal model fade" id = "popular_picks-Modal1" tabindex = "-1" aria-hidden = "true">
+	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal1" tabindex = "-1" aria-hidden = "true">
 		<div class = "modal-dialog">
 			<div class = "modal-content">
 				<div class = "close-modal" data-dismiss = "modal">
@@ -312,7 +395,7 @@
 						<div class = "rl"></div>
 					</div>
 				</div>
-				<div class = "conatiner">
+				<div class = "container">
 					<div class = "row">
 						<div class = "col-lg-8 mx-auto">
 							<div class = "modal-body">
@@ -321,7 +404,7 @@
 								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="image_path_here">
+								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 								<!-- brings element on 1 row -->
 								<ul class = "list-inline">
@@ -341,7 +424,7 @@
 	</div>
 
 	<!-- Modal 2 -->
-	<div class = "popular_picks-modal model fade" id = "popular_picks-Modal2" tabindex = "-1" aria-hidden = "true">
+	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal2" tabindex = "-1" aria-hidden = "true">
 		<div class = "modal-dialog">
 			<div class = "modal-content">
 				<div class = "close-modal" data-dismiss = "modal">
@@ -349,7 +432,7 @@
 						<div class = "rl"></div>
 					</div>
 				</div>
-				<div class = "conatiner">
+				<div class = "container">
 					<div class = "row">
 						<div class = "col-lg-8 mx-auto">
 							<div class = "modal-body">
@@ -358,7 +441,7 @@
 								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="image_path_here">
+								<img class = "img-fluid d-block mx-auto" src="Images/pizza1.jpg">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 								<!-- brings element on 1 row -->
 								<ul class = "list-inline">
@@ -378,7 +461,7 @@
 	</div>
 
 	<!-- Modal 3 -->
-	<div class = "popular_picks-modal model fade" id = "popular_picks-Modal3" tabindex = "-1" aria-hidden = "true">
+	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal3" tabindex = "-1" aria-hidden = "true">
 		<div class = "modal-dialog">
 			<div class = "modal-content">
 				<div class = "close-modal" data-dismiss = "modal">
@@ -386,7 +469,7 @@
 						<div class = "rl"></div>
 					</div>
 				</div>
-				<div class = "conatiner">
+				<div class = "container">
 					<div class = "row">
 						<div class = "col-lg-8 mx-auto">
 							<div class = "modal-body">
@@ -395,7 +478,7 @@
 								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="image_path_here">
+								<img class = "img-fluid d-block mx-auto" src="Images/pizza1.jpg">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 								<!-- brings element on 1 row -->
 								<ul class = "list-inline">
@@ -415,7 +498,7 @@
 	</div>
 
 	<!-- Modal 4 -->
-	<div class = "popular_picks-modal model fade" id = "popular_picks-Modal4" tabindex = "-1" aria-hidden = "true">
+	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal4" tabindex = "-1" aria-hidden = "true">
 		<div class = "modal-dialog">
 			<div class = "modal-content">
 				<div class = "close-modal" data-dismiss = "modal">
@@ -423,7 +506,7 @@
 						<div class = "rl"></div>
 					</div>
 				</div>
-				<div class = "conatiner">
+				<div class = "container">
 					<div class = "row">
 						<div class = "col-lg-8 mx-auto">
 							<div class = "modal-body">
@@ -432,7 +515,7 @@
 								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="image_path_here">
+								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 								<!-- brings element on 1 row -->
 								<ul class = "list-inline">
@@ -452,7 +535,7 @@
 	</div>
 
 	<!-- Modal 5 -->
-	<div class = "popular_picks-modal model fade" id = "popular_picks-Modal5" tabindex = "-1" aria-hidden = "true">
+	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal5" tabindex = "-1" aria-hidden = "true">
 		<div class = "modal-dialog">
 			<div class = "modal-content">
 				<div class = "close-modal" data-dismiss = "modal">
@@ -460,7 +543,7 @@
 						<div class = "rl"></div>
 					</div>
 				</div>
-				<div class = "conatiner">
+				<div class = "container">
 					<div class = "row">
 						<div class = "col-lg-8 mx-auto">
 							<div class = "modal-body">
@@ -469,7 +552,7 @@
 								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="image_path_here">
+								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 								<!-- brings element on 1 row -->
 								<ul class = "list-inline">
@@ -489,7 +572,7 @@
 	</div>
 
 	<!-- Modal 6 -->
-	<div class = "popular_picks-modal model fade" id = "popular_picks-Modal6" tabindex = "-1" aria-hidden = "true">
+	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal6" tabindex = "-1" aria-hidden = "true">
 		<div class = "modal-dialog">
 			<div class = "modal-content">
 				<div class = "close-modal" data-dismiss = "modal">
@@ -497,7 +580,7 @@
 						<div class = "rl"></div>
 					</div>
 				</div>
-				<div class = "conatiner">
+				<div class = "container">
 					<div class = "row">
 						<div class = "col-lg-8 mx-auto">
 							<div class = "modal-body">
@@ -506,7 +589,7 @@
 								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="image_path_here">
+								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 								<!-- brings element on 1 row -->
 								<ul class = "list-inline">
@@ -524,9 +607,18 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Bootstrap core JS -->
+	<script src = "jquery/jquery.min.js"></script>
+	<script src = "bootstrap/js/bootstrap.bundle.min.js"></script>
 	
+	<!-- Plugin JS -->
+	<script src = "jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom script -->
+	<script src = "style.js"></script>
+
 
 </body>
+
 </html>
 
