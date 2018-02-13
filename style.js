@@ -39,7 +39,7 @@
   	// Collapse the navbar when page is scrolled
   	$(window).scroll(navbarCollapse);
 
-  	// Hide navbar when modals trigger
+  	// Hide navbar when modals trigger. show.bs.modal - Occurs when the modal is about to be shown.
   	$('.pouplar_picks-modal').on('show.bs.modal', function(e) {
     	$(".navbar").addClass("d-none");
   	})
