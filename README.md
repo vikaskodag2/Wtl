@@ -1,2 +1,0 @@
-# Wtl
-wtl mini project
