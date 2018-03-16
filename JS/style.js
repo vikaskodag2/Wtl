@@ -1,31 +1,6 @@
-
-
 (function($) {
 	"use script";
-
-  $(document).ready(function () {
-     $.ajax({
-        method : "GET",
-        url : "../PHP/comment_fetch.php",
-     }).done(function( data ){
-        var result = $.parseJSON(data);
-        var i = 0;
-        $.each( result, function(key, value) {
-            i = i + 1;
-
-            var img_id = value['column_name_for_image_source'];
-            var name = value['user_name'];
-            var comment = value['comment'];
-            var img_attr = document.getElementById('dynamic_img1');
-            if(i == 1) {
-                img_attr.src = img_id;
-                $(#dynamic_user1).html(name);
-                $(#dynamic_comment1).html(comment);
-            }
-        })
-     })
-  });
-
+    //this script is for smooth effects.
 	//Smooth scrolling using jQuery easing
 	$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
