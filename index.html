@@ -37,9 +37,6 @@
         <div class = "collapse navbar-collapse" id  ="navbarResponsive">
           <ul class = "navbar-nav text-uppercase ml-auto">
             <li class = "nav-item">
-              <a class = "nav-link js-scroll-trigger" href = "#hot_picks">Hot Picks</a>
-            </li>
-            <li class = "nav-item">
               <a class = "nav-link js-scroll-trigger" href = "#popular_picks">Popular Picks</a>
             </li>
             <li class = "nav-item">
@@ -47,13 +44,17 @@
             </li>
             <li class = "nav-item">
               <a class = "nav-link js-scroll-trigger" href = "#team">Team</a>
-            </li>
+			</li>
+			<li class = "nav-item">
+				<!-- change address to login page -->
+				<a class = "nav-link js-scroll-trigger" href = "Payment.html">Login</a>
+			</li>
           </ul>
         </div>
       </div>
     </nav>
 	
-	<!-- Header -->
+	<!-- Header -->	
 	<header class = "master-head">
 		<div class = "conatiner">
 			<div class = "_welcome_">
@@ -63,106 +64,6 @@
 			</div>
 		</div>
 	</header>
-	
-	<!-- HOT PICKS -->
-	<!-- <section id = "hot_picks">
-		<div class = "conatiner">
-			<div class = "row">
-				<div class = "col-lg-12 text-center">
-					<h2 class = "section-heading text-uppercase">hot picks</h2>
-					<h3 class = "section-subheading text-muted">People's choice today.</h3>
-				</div>
-			</div>
-			<div class = "row text-center">
-				<div class = "col-md-4">
-					<span class = "fa-stack fa-4x">
-						<i class="fa fa-circle fa-stack-2x text-primary"></i>
-              			<i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class = "hot-pick-heading">Pizza 1</h4>
-					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-				</div>
-				
-				<div class="col-md-4">
-            		<span class="fa-stack fa-4x">
-    	        	  	<i class="fa fa-circle fa-stack-2x text-primary"></i>
-        	      		<i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            		</span>
-        		    <h4 class="hot-pick-heading">Pizza 2</h4>
-            		<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          		</div>
-
-          		<div class="col-md-4">
-            		<span class="fa-stack fa-4x">
-              			<i class="fa fa-circle fa-stack-2x text-primary"></i>
-              			<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            		</span>
-            		<h4 class="hot-pick-heading">Pizza 3</h4>
-            		<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          		</div>
-			</div>
-		</div>
-	</section> -->
-
-
-	<section class = "bg-light" id = "hot_picks">
-		<div class = "container">
-			<div class = "row">
-				<div class = "col-lg-12 text-center">
-					<h2 class = "section-heading text-uppercase">Hot picks Today</h2>
-					<h3 class = "section-subheading text-muted">Most eaten pizza</h3>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal1">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
-								<!-- <i class = "fa fa-plus fa-3x"></i> -->
-							</div>
-						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
-					</a>
-					<div class = "popular_picks-caption">
-						<h4 class = "text-center">Pizza 1</h4>
-						<p class = "text-muted text-center">Pizza 1 description</p>
-					</div>
-				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal2">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
-								<!-- <i class = "fa fa-plus fa-3x"></i> -->
-							</div>
-						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
-					</a>
-					<div class = "popular_picks-caption">
-						<h4 class = "text-center">Pizza 2</h4>
-						<p class = "text-muted text-center">Pizza2 description</p>
-					</div>
-				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal3">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
-								<!-- <i class = "fa fa-plus fa-3x"></i> -->
-							</div>
-						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
-					</a>
-					<div class = "popular_picks-caption">
-						<h4 class = "text-center">Pizza 3</h4>
-						<p class = "text-muted text-center">Pizza 3 description</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
 
 
 	<!-- popular_picks -->
@@ -295,11 +196,11 @@
 							</div>
 							<div class = "timeline-panel">
 								<div class = "timeline-heading">
-									<h4>Commentor 2</h4>
+									<h4 id = "dynamic_user2">Commentor 2</h4>
 									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
 								</div>
 								<div class = "timeline-body">
-									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									<p class = "text-muted" id = "dynamic_comment2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
 								</div>
 							</div>
 						</li>
@@ -309,11 +210,11 @@
 							</div>
 							<div class = "timeline-panel">
 								<div class = "timeline-heading">
-									<h4>Commentor 3</h4>
+									<h4 id = "dynamic_user3">Commentor 3</h4>
 									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
 								</div>
 								<div class = "timeline-body">
-									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									<p class = "text-muted" id = "dynamic_comment3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
 								</div>
 							</div>
 						</li>
@@ -323,11 +224,11 @@
 							</div>
 							<div class = "timeline-panel">
 								<div class = "timeline-heading">
-									<h4>Commentor 4</h4>
+									<h4 id = "dynamic_user4">Commentor 4</h4>
 									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
 								</div>
 								<div class = "timeline-body">
-									<p class = "text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+									<p class = "text-muted" id = "dynamic_comment4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
 								</div>
 							</div>
 						</li>

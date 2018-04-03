@@ -5,7 +5,7 @@ body {
 
 p { line-height : 1.75; }
 a {	color : #fed136; }
-a : hover { color : #fec503; }
+a:hover { color : #fec503; }
 
 .text-primary {	color : #fed136; }
 
@@ -179,10 +179,7 @@ header.master-head ._welcome_ .welcome_heading {
   } 
 }
 
-.hot-pick-heading {
-  margin : 15px;
-  text-transform : none;
-}
+
 #popular_picks .popular_picks-item {
   right : 0;
   margin : 0 0 15px;
