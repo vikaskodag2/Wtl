@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register | Sign Up</title>
+    <link rel="stylesheet" href="CSS/register.css">
+    <script type="text/javascript">
+        // Form validation code will come here.
+        function validate() {
+            if (document.SignupForm.first.value == "") {
+                alert("Please provide your first name!");
+                document.SignupForm.first.focus();
+                return false;
+            }
+            if (document.SignupForm.last.value == "") {
+                alert("Please provide your last name!");
+                document.SignupForm.last.focus();
+                return false;
+            }
+            if (document.SignupForm.password.value < 4) {
+                alert("Please must be 6 character long!");
+                document.SignupForm.password.focus();
+                return false;
+            }
+            if (document.SignupForm.email.value == " ") {
+                var emailID = document.SignupForm.email.value;
+                atpos = emailID.indexOf("@");
+                dotpos = emailID.lastIndexOf(".");
+
+                if (atpos < 1 || (dotpos - atpos < 2)) {
+                    alert("Please enter valid email ID")
+                    document.SignupForm.email.focus();
+                    return false;
+                }
+
+            }
+
+            if (document.SignupForm.mobile.value < 10) {
+                alert("Mobile number must be 10 digits !");
+                return false;
+            }
+            if (document.SignupForm.location.value == "-1") {
+                alert("Please choose your location !");
+                document.SignupForm.location.focus();
+                return false;
+            }
+            return (true);
+        }
+    </script>
+</head>
+
+<body bgcolor="black">
+
+    <div class="header">
+        <a href="index.html">
+            <button class="tablink">Pizza</button>
+        </a>
+        <a href="meals.html">
+            <button class="tablink">Meals</button>
+        </a>
+        <a href="drink.html">
+            <button class="tablink">Drinks</button>
+        </a>
+        <a href="dessert.html">
+            <button class="tablink">Dessert</button>
+        </a>
+        <a href="feedback.html">
+            <button class="tablink">Feedback</button>
+        </a>
+        <a href="login.html">
+            <button class="tablink">Login Here</button>
+        </a>
+    </div>
+
+    <br>
+    <h1>Order Pizza Online</h1>
+    <table border="0" bordercolor="black" cellpadding="10" cellspacing="15">
+        <th id="heading">Sign Up Here to Get Pizza </th>
+
+        <form action="signup.html" onsubmit="return(validate())" method="get" name="SignupForm">
+            <tr>
+                <td>
+                    <input type="text" name="first" id="fist" value="First Name">
+                </td>
+                <td>
+                    <input type="text" name="last" id="last" value="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="password" name="password" id="password" value="Password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="email" id="email" value="Email Id">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="mobile" id="mobile" value="Mobile No">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="location" id="location">
+                        <option value="Agra">Agra</option>
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                        <option value="Pune">Pune</option>
+                    </select>
+                </td>
+            </tr>
+            <td>
+                <button class="loginform" name="register">Register</button>
+            </td>
+            <td>
+                <button class="loginform" name="cancel">Cancel</button>
+            </td>
+            </tr>
+        </form>
+
+    </table>
+</body>
+
+</html>

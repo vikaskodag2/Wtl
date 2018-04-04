@@ -1,0 +1,97 @@
+a:link {
+    color: red;
+    text-decoration: transparent;
+}
+
+a:active {
+    color: red;
+    background-color: #FFFFCC;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: transparent;
+}
+
+a:hover {
+    font-size: x-large;
+    color: red;
+    text-decoration: line-through;
+}
+
+a:focus {
+    border-style: solid;
+    border-width: 2px;
+    background-color: #FFA500;
+}
+
+.form1 {
+    background-color: red;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.header {
+    background-color: red;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.note {
+    color: red;
+}
+
+body {
+    color: white;
+    text-align: center;
+}
+
+button[class=tablink] {
+    background-color: white;
+    color: red;
+    padding: 16px 32px;
+    margin: 2x 2px;
+    font-size: x-large;
+    font-family: magneto;
+}
+
+em[id=id] {
+    color: white;
+    padding: 18px 34px;
+    margin: 2x 2px;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+button[class=loginform] {
+    color: blue;
+    padding: 12px 16px;
+    margin: 2px 2px;
+    font-weight: bolder;
+    font-family: cursiva;
+    font-size: large;
+}
+
+button[name=signup] {
+    color: red;
+    padding: 12px 16px;
+    margin: 2px 2px;
+    font-weight: bolder;
+    font-family: cursiva;
+    font-size: large;
+    float: left;
+}
+
+input[type=text],
+[type=password] {
+    color: black;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+}

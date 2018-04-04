@@ -2,64 +2,65 @@
 <html>
 
 <head>
-	<meta charset = "UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<meta name="description" content="Pizza App Pizza Order">
-    <meta name="author" content="Vikas Kodag">
+	<meta name="author" content="Vikas Kodag">
 
 	<title>Pizza App</title>
-	
+
 	<!-- Custom styles -->
-	<link href = "CSS/style.css" rel = "stylesheet">
-	
+	<link href="CSS/style.css" rel="stylesheet">
+
 	<!-- bootstrap refrence -->
-	<link href = "MISC/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
-	
-	 <!-- Custom fonts for this template -->
-    <link href="MISC/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link href="MISC/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template -->
+	<link href="MISC/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 </head>
 
-<body id = "page-top">
+<body id="page-top">
 
 	<!--Navigation -->
-	<nav class = "navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class = "container">
-        <a class = "navbar-brand js-scroll-trigger" href = "#page-top">Pizza App</a>
-        <button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive" aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
-          Menu
-          <i class = "fa fa-bars"></i>
-        </button>
-        <div class = "collapse navbar-collapse" id  ="navbarResponsive">
-          <ul class = "navbar-nav text-uppercase ml-auto">
-            <li class = "nav-item">
-              <a class = "nav-link js-scroll-trigger" href = "#popular_picks">Popular Picks</a>
-            </li>
-            <li class = "nav-item">
-              <a class = "nav-link js-scroll-trigger" href = "#peoples_comments">Peoples Comments</a>
-            </li>
-            <li class = "nav-item">
-              <a class = "nav-link js-scroll-trigger" href = "#team">Team</a>
-			</li>
-			<li class = "nav-item">
-				<!-- change address to login page -->
-				<a class = "nav-link js-scroll-trigger" href = "Payment.html">Login</a>
-			</li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-	
-	<!-- Header -->	
-	<header class = "master-head">
-		<div class = "conatiner">
-			<div class = "_welcome_">
-				<div class = "welcome_text">Welcome</div>
-				<div class = "welcome_heading">It's Nice To Meet You</div>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Pizza App</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+			    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#popular_picks">Popular Picks</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#peoples_comments">Peoples Comments</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#team">Team</a>
+					</li>
+					<li class="nav-item">
+						<!-- change address to login page -->
+						<a class="nav-link js-scroll-trigger" href="Payment.html">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header class="master-head">
+		<div class="conatiner">
+			<div class="_welcome_">
+				<div class="welcome_text">Welcome</div>
+				<div class="welcome_heading">It's Nice To Meet You</div>
 				<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Let's Order</a>
 			</div>
 		</div>
@@ -67,97 +68,97 @@
 
 
 	<!-- popular_picks -->
-	<section class = "bg-light" id = "popular_picks">
-		<div class = "container">
-			<div class = "row">
-				<div class = "col-lg-12 text-center">
-					<h2 class = "section-heading text-uppercase">popular picks</h2>
-					<h3 class = "section-subheading text-muted">Most eaten pizza</h3>
+	<section class="bg-light" id="popular_picks">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading text-uppercase">popular picks</h2>
+					<h3 class="section-subheading text-muted">Most eaten pizza</h3>
 				</div>
 			</div>
-			<div class = "row">
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal1">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle="modal" href="#popular_picks-Modal1">
+						<div class="popular_picks-hover">
+							<div class="popular_picks-hover-content">
 								<!-- <i class = "fa fa-plus fa-3x"></i> -->
 							</div>
 						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
+						<img class="img-fluid" src="Images/pizza2.jpg" alt="">
 					</a>
-					<div class = "popular_picks-caption">
+					<div class="popular_picks-caption">
 						<h4>Pizza 1</h4>
-						<p class = "text-muted">Pizza 1 description</p>
+						<p class="text-muted">Pizza 1 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal2">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
+				<div class="col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle="modal" href="#popular_picks-Modal2">
+						<div class="popular_picks-hover">
+							<div class="popular_picks-hover-content">
 								<!-- <i class = "fa fa-plus fa-3x"></i> -->
 							</div>
 						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
+						<img class="img-fluid" src="Images/pizza2.jpg" alt="">
 					</a>
-					<div class = "popular_picks-caption">
+					<div class="popular_picks-caption">
 						<h4>Pizza 2</h4>
-						<p class = "text-muted">Pizza2 description</p>
+						<p class="text-muted">Pizza2 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal3">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
+				<div class="col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle="modal" href="#popular_picks-Modal3">
+						<div class="popular_picks-hover">
+							<div class="popular_picks-hover-content">
 								<!-- <i class = "fa fa-plus fa-3x"></i> -->
 							</div>
 						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
+						<img class="img-fluid" src="Images/pizza2.jpg" alt="">
 					</a>
-					<div class = "popular_picks-caption">
+					<div class="popular_picks-caption">
 						<h4>Pizza 3</h4>
-						<p class = "text-muted">Pizza 3 description</p>
+						<p class="text-muted">Pizza 3 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal4">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover_p-content">
+				<div class="col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle="modal" href="#popular_picks-Modal4">
+						<div class="popular_picks-hover">
+							<div class="popular_picks-hover_p-content">
 								<!-- <i class = "fa fa-plus fa-3x"></i> -->
 							</div>
 						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
+						<img class="img-fluid" src="Images/pizza2.jpg" alt="">
 					</a>
-					<div class = "popular_picks-caption">
+					<div class="popular_picks-caption">
 						<h4>Pizza 4</h4>
-						<p class = "text-muted">Pizza 3 description</p>
+						<p class="text-muted">Pizza 3 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal5">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
+				<div class="col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle="modal" href="#popular_picks-Modal5">
+						<div class="popular_picks-hover">
+							<div class="popular_picks-hover-content">
 								<!-- <i class = "fa fa-plus fa-3x"></i> -->
 							</div>
 						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
+						<img class="img-fluid" src="Images/pizza2.jpg" alt="">
 					</a>
-					<div class = "popular_picks-caption">
+					<div class="popular_picks-caption">
 						<h4>Pizza 5</h4>
-						<p class = "text-muted">Pizza 5 description</p>
+						<p class="text-muted">Pizza 5 description</p>
 					</div>
 				</div>
-				<div class = "col-md-4 col-sm-6 popular_picks-item">
-					<a class="popular_picks-link" data-toggle = "modal" href = "#popular_picks-Modal6">
-						<div class = "popular_picks-hover">
-							<div class = "popular_picks-hover-content">
+				<div class="col-md-4 col-sm-6 popular_picks-item">
+					<a class="popular_picks-link" data-toggle="modal" href="#popular_picks-Modal6">
+						<div class="popular_picks-hover">
+							<div class="popular_picks-hover-content">
 								<!-- <i class = "fa fa-plus fa-3x"></i> -->
 							</div>
 						</div>
-						<img class = "img-fluid" src="Images/pizza2.jpg" alt = "">
+						<img class="img-fluid" src="Images/pizza2.jpg" alt="">
 					</a>
-					<div class = "popular_picks-caption">
+					<div class="popular_picks-caption">
 						<h4>Pizza 6 </h4>
-						<p class = "text-muted">Pizza 6 description</p>
+						<p class="text-muted">Pizza 6 description</p>
 					</div>
 				</div>
 			</div>
@@ -165,81 +166,85 @@
 	</section>
 
 	<!-- people comments -->
-	<section id = "peoples_comments">
-		<div class = "container">
-			<div class = "row">
-				<div class = "col-lg-12 text-center">
-					<h2 class = "section-heading text-uppercase">Comments</h2>
-					<h3 class = "section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+	<section id="peoples_comments">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading text-uppercase">Comments</h2>
+					<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
 				</div>
 			</div>
-			<div class = "row">
-				<div class = "col-lg-12">
-					<ul class = "timeline">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="timeline">
 						<li>
-							<div class = "timeline-image">
-								<img class = "rounded-circle img-fluid" id = "dynamic_img1" src = "Images/anonymous-user.jpg" alt = "">
+							<div class="timeline-image">
+								<img class="rounded-circle img-fluid" id="dynamic_img1" src="Images/anonymous-user.jpg" alt="">
 							</div>
-							<div class = "timeline-panel">
-								<div class = "timeline-heading">
-									<h4 id = "dynamic_user1">Commentor 1</h4>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 id="dynamic_user1">Commentor 1</h4>
 									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
 								</div>
-								<div class = "timeline-body">
-									<p class = "text-muted" id = "dynamic_comment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-								</div>
-							</div>
-						</li>
-						<li class = "timeline-inverted">
-							<div class = "timeline-image">
-								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
-							</div>
-							<div class = "timeline-panel">
-								<div class = "timeline-heading">
-									<h4 id = "dynamic_user2">Commentor 2</h4>
-									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
-								</div>
-								<div class = "timeline-body">
-									<p class = "text-muted" id = "dynamic_comment2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class = "timeline-image">
-								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
-							</div>
-							<div class = "timeline-panel">
-								<div class = "timeline-heading">
-									<h4 id = "dynamic_user3">Commentor 3</h4>
-									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
-								</div>
-								<div class = "timeline-body">
-									<p class = "text-muted" id = "dynamic_comment3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-								</div>
-							</div>
-						</li>
-						<li class = "timeline-inverted">
-							<div class = "timeline-image">
-								<img class = "rounded-circle img-fluid" src = "Images/anonymous-user.jpg" alt = "">
-							</div>
-							<div class = "timeline-panel">
-								<div class = "timeline-heading">
-									<h4 id = "dynamic_user4">Commentor 4</h4>
-									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
-								</div>
-								<div class = "timeline-body">
-									<p class = "text-muted" id = "dynamic_comment4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								<div class="timeline-body">
+									<p class="text-muted" id="dynamic_comment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus
+										qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
 								</div>
 							</div>
 						</li>
 						<li class="timeline-inverted">
-               	 			<div class="timeline-image">
-                  				<h4>Be Part
-                    				<br>Of Our
-                    				<br>Story!
-                    			</h4>
-                			</div>
-              			</li>
+							<div class="timeline-image">
+								<img class="rounded-circle img-fluid" src="Images/anonymous-user.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 id="dynamic_user2">Commentor 2</h4>
+									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted" id="dynamic_comment2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus
+										qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="timeline-image">
+								<img class="rounded-circle img-fluid" src="Images/anonymous-user.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 id="dynamic_user3">Commentor 3</h4>
+									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted" id="dynamic_comment3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus
+										qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted">
+							<div class="timeline-image">
+								<img class="rounded-circle img-fluid" src="Images/anonymous-user.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 id="dynamic_user4">Commentor 4</h4>
+									<!-- <h4 class = "subheading">Lorem ipsum dolor sit.</h4> -->
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted" id="dynamic_comment4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus
+										qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted">
+									<div class="timeline-image" data-toggle="modal" data-target="#comment_modal">
+								<h4>Be Part
+									<br>Of Our
+									<br>Story!
+								</h4>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -247,134 +252,290 @@
 	</section>
 
 	<!-- Team -->
-	<section class = "bg-light" id = "team">
-		<div class = "conatiner">
-			<div class = "row">
-				<div class = "col-lg-12 text-center">
-					<h2 class = "section-heading text-uppercase">Our Amazing Team</h2>
-					<h3 class = "section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+	<section class="bg-light" id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+					<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
 				</div>
 			</div>
-			<div class = "row">
+			<div class="row">
 				<div class="col-sm-4">
-            		<div class="team-member">
-              			<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
-              			<h4>Member 1</h4>
-              			<p class="text-muted">Designation</p>
-              			<!-- link below links with their social media -->
-              			<ul class="list-inline social-buttons">
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-twitter"></i>
-                  				</a>
-                			</li>
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-facebook"></i>
-                  				</a>
-                			</li>
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-linkedin"></i>
-                  				</a>
-                			</li>
-            	  		</ul>
-            		</div>
-          		</div>
-          		<div class="col-sm-4">
-            		<div class="team-member">
-              			<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
-              			<h4>Member 2</h4>
-              			<p class="text-muted">Designation</p>
-              			<!-- link below links with their social media -->
-              			<ul class="list-inline social-buttons">
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-twitter"></i>
-                  				</a>
-                			</li>
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-facebook"></i>
-                  				</a>
-                			</li>
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-linkedin"></i>
-                  				</a>
-                			</li>
-            	  		</ul>
-            		</div>
-          		</div>
-          		<div class="col-sm-4">
-            		<div class="team-member">
-              			<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
-              			<h4>Member 3</h4>
-              			<p class="text-muted">Designation</p>
-              			<!-- link below links with their social media -->
-              			<ul class="list-inline social-buttons">
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-twitter"></i>
-                  				</a>
-                			</li>
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-facebook"></i>
-                  				</a>
-                			</li>
-                			<li class="list-inline-item">
-                  				<a href="#">
-                    				<i class="fa fa-linkedin"></i>
-                  				</a>
-                			</li>
-            	  		</ul>
-            		</div>
-          		</div>
-			</div> 
-			<div class = "row">
-				<div class = "col-lg-8 mx-auto text-center">
-					<p class = "large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+					<div class="team-member">
+						<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
+						<h4>Member 1</h4>
+						<p class="text-muted">Designation</p>
+						<!-- link below links with their social media -->
+						<ul class="list-inline social-buttons">
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>                                                                                                                                     
+				<div class="col-sm-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
+						<h4>Member 2</h4>
+						<p class="text-muted">Designation</p>
+						<!-- link below links with their social media -->
+						<ul class="list-inline social-buttons">
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle" src="Images/anonymous-user.jpg" alt="">
+						<h4>Member 3</h4>
+						<p class="text-muted">Designation</p>
+						<!-- link below links with their social media -->
+						<ul class="list-inline social-buttons">
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 mx-auto text-center">
+					<p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
+						totam corporis ea, alias ut unde.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Contact us -->
-	<section id = "contact_us"></section>
+	<!--Footer-->
+	<footer class="page-footer font-small unique-color-dark pt-0  bg-secondary">
 
-	<!-- FOOTER -- >
-	<footer></footer>
+		<div style="background-color: #6351ce;">
+			<div class="container">
+				<!--Grid row-->
+				<div class="row py-4 d-flex align-items-center">
 
+					<!--Grid column-->
+					<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+						<h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+					</div>
+					<!--Grid column-->
+
+					<!--Grid column-->
+					<div class="col-md-6 col-lg-7 text-center text-md-right">
+						<!--Facebook-->
+						<a class="fb-ic ml-0">
+							<i class="fa fa-facebook white-text mr-lg-4"> </i>
+						</a>
+						<!--Twitter-->
+						<a class="tw-ic">
+							<i class="fa fa-twitter white-text mr-lg-4"> </i>
+						</a>
+						<!--Google +-->
+						<a class="gplus-ic">
+							<i class="fa fa-google-plus white-text mr-lg-4"> </i>
+						</a>
+						<!--Linkedin-->
+						<a class="li-ic">
+							<i class="fa fa-linkedin white-text mr-lg-4"> </i>
+						</a>
+						<!--Instagram-->
+						<a class="ins-ic">
+							<i class="fa fa-instagram white-text mr-lg-4"> </i>
+						</a>
+					</div>
+					<!--Grid column-->	
+
+				</div>
+				<!--Grid row-->
+			</div>
+		</div>
+
+		<!--Footer Links-->
+		<div class="container mt-5 mb-4 text-center text-md-left">
+			<div class="row mt-3">
+
+				<!--First column-->
+				<div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Pizza App</strong>
+					</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui
+						quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+				</div>
+				<!--/.First column-->
+
+				<!--Second column-->
+				<div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-8">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Useful links</strong>
+					</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p>
+						<a href="#popular_picks">Popular Picks</a>
+					</p>
+					<p>
+						<a href="#peoples_comments">Comments</a>
+					</p>
+					<p>
+						<a href="#team">Team</a>
+					</p>
+				</div>
+				<!--/.Second column-->
+
+				<!--Third column-->
+				<div class="col-md-4 col-lg-4 col-xl-4">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Contact Us</strong>
+					</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p>
+						<i class="fa fa-home mr-3"></i> Pune, India</p>
+					<p>
+						<i class="fa fa-envelope mr-3"></i> info@example.com</p>
+					<p>
+						<i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+					<p>
+						<i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+				</div>
+				<!--/.Third column-->
+
+			</div>
+		</div>
+		<!--/.Footer Links-->
+
+		<!-- Copyright-->
+		<div class="footer-copyright py-3 text-center">
+			© 2018 Copyright: Lorem Epsum 
+		</div>
+		<!--/.Copyright -->
+
+	</footer>
+	<!--/.Footer-->
+
+
+	<!-- Modal for comments -->
+	<div id="comment_modal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<!-- <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div> -->
+				<div class="modal-body">	
+					<form action = "comment.php" method = "POST>
+						<div class="row">
+							<div class="col-sm-12 form-group">
+								<label for="comments">
+									Comments:</label>
+								<textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000"
+			    				rows="7"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label for="name">
+									Your Name:</label>
+									<input type="text" class="form-control" id="name" name="name" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<label for="email">
+									Email:</label>
+									<input type="email" class="form-control" id="email" name="email" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 form-group">
+								<input type = "submit" >
+							</div>
+						</div>
+					</form>
+					<!-- <div id="success_message" style="width:100%; height:100%; display:none; ">
+						<h3>Posted your feedback successfully!</h3>
+					</div>
+					<div id="error_message" style="width:100%; height:100%; display:none; ">
+						<h3>Error</h3>
+						Sorry there was an error sending your form.
+					</div> -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 	<!-- put order-page link on modal button. Currently not added -->
 	<!-- Modal 1 -->
-	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal1" tabindex = "-1" aria-hidden = "true">
-		<div class = "modal-dialog">
-			<div class = "modal-content">
-				<div class = "close-modal" data-dismiss = "modal">
-					<div class = "lr">
-						<div class = "rl"></div>
+	<div class="popular_picks-modal modal fade" id="popular_picks-Modal1" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
 					</div>
 				</div>
-				<div class = "container">
-					<div class = "row">
-						<div class = "col-lg-8 mx-auto">
-							<div class = "modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
 								<!-- Pizza description -->
-								<h2 class = "text-uppercase">Pizza 1</h2>
-								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<h2 class="text-uppercase">Pizza 1</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<img class="img-fluid d-block mx-auto" src="Images/pizza2.jpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
+									deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+									facere nemo!</p>
 								<!-- brings element on 1 row -->
-								<ul class = "list-inline">
+								<ul class="list-inline">
 									<li>Lorem : Epsum</li>
 									<li>Lorem : Epsum</li>
 								</ul>
-								<button class = "btn btn-primary" data-dismiss = "modal" type = "button">
-									<i class = "fa fa-times"></i>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									Order
 								</button>
 							</div>
@@ -386,32 +547,33 @@
 	</div>
 
 	<!-- Modal 2 -->
-	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal2" tabindex = "-1" aria-hidden = "true">
-		<div class = "modal-dialog">
-			<div class = "modal-content">
-				<div class = "close-modal" data-dismiss = "modal">
-					<div class = "lr">
-						<div class = "rl"></div>
+	<div class="popular_picks-modal modal fade" id="popular_picks-Modal2" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
 					</div>
 				</div>
-				<div class = "container">
-					<div class = "row">
-						<div class = "col-lg-8 mx-auto">
-							<div class = "modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
 								<!-- Pizza description -->
-								<h2 class = "text-uppercase">Pizza 1</h2>
-								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<h2 class="text-uppercase">Pizza 1</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="Images/pizza1.jpg">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<img class="img-fluid d-block mx-auto" src="Images/pizza1.jpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
+									deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+									facere nemo!</p>
 								<!-- brings element on 1 row -->
-								<ul class = "list-inline">
+								<ul class="list-inline">
 									<li>Lorem : Epsum</li>
 									<li>Lorem : Epsum</li>
 								</ul>
-								<button class = "btn btn-primary" data-dismiss = "modal" type = "button">
-									<i class = "fa fa-times"></i>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									Order
 								</button>
 							</div>
@@ -423,32 +585,33 @@
 	</div>
 
 	<!-- Modal 3 -->
-	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal3" tabindex = "-1" aria-hidden = "true">
-		<div class = "modal-dialog">
-			<div class = "modal-content">
-				<div class = "close-modal" data-dismiss = "modal">
-					<div class = "lr">
-						<div class = "rl"></div>
+	<div class="popular_picks-modal modal fade" id="popular_picks-Modal3" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
 					</div>
 				</div>
-				<div class = "container">
-					<div class = "row">
-						<div class = "col-lg-8 mx-auto">
-							<div class = "modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
 								<!-- Pizza description -->
-								<h2 class = "text-uppercase">Pizza 1</h2>
-								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<h2 class="text-uppercase">Pizza 1</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="Images/pizza1.jpg">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<img class="img-fluid d-block mx-auto" src="Images/pizza1.jpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
+									deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+									facere nemo!</p>
 								<!-- brings element on 1 row -->
-								<ul class = "list-inline">
+								<ul class="list-inline">
 									<li>Lorem : Epsum</li>
 									<li>Lorem : Epsum</li>
 								</ul>
-								<button class = "btn btn-primary" data-dismiss = "modal" type = "button">
-									<i class = "fa fa-times"></i>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									Order
 								</button>
 							</div>
@@ -460,32 +623,33 @@
 	</div>
 
 	<!-- Modal 4 -->
-	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal4" tabindex = "-1" aria-hidden = "true">
-		<div class = "modal-dialog">
-			<div class = "modal-content">
-				<div class = "close-modal" data-dismiss = "modal">
-					<div class = "lr">
-						<div class = "rl"></div>
+	<div class="popular_picks-modal modal fade" id="popular_picks-Modal4" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
 					</div>
 				</div>
-				<div class = "container">
-					<div class = "row">
-						<div class = "col-lg-8 mx-auto">
-							<div class = "modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
 								<!-- Pizza description -->
-								<h2 class = "text-uppercase">Pizza 1</h2>
-								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<h2 class="text-uppercase">Pizza 1</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<img class="img-fluid d-block mx-auto" src="Images/pizza2.jpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
+									deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+									facere nemo!</p>
 								<!-- brings element on 1 row -->
-								<ul class = "list-inline">
+								<ul class="list-inline">
 									<li>Lorem : Epsum</li>
 									<li>Lorem : Epsum</li>
 								</ul>
-								<button class = "btn btn-primary" data-dismiss = "modal" type = "button">
-									<i class = "fa fa-times"></i>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									Order
 								</button>
 							</div>
@@ -497,32 +661,33 @@
 	</div>
 
 	<!-- Modal 5 -->
-	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal5" tabindex = "-1" aria-hidden = "true">
-		<div class = "modal-dialog">
-			<div class = "modal-content">
-				<div class = "close-modal" data-dismiss = "modal">
-					<div class = "lr">
-						<div class = "rl"></div>
+	<div class="popular_picks-modal modal fade" id="popular_picks-Modal5" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
 					</div>
 				</div>
-				<div class = "container">
-					<div class = "row">
-						<div class = "col-lg-8 mx-auto">
-							<div class = "modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
 								<!-- Pizza description -->
-								<h2 class = "text-uppercase">Pizza 1</h2>
-								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<h2 class="text-uppercase">Pizza 1</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<img class="img-fluid d-block mx-auto" src="Images/pizza2.jpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
+									deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+									facere nemo!</p>
 								<!-- brings element on 1 row -->
-								<ul class = "list-inline">
+								<ul class="list-inline">
 									<li>Lorem : Epsum</li>
 									<li>Lorem : Epsum</li>
 								</ul>
-								<button class = "btn btn-primary" data-dismiss = "modal" type = "button">
-									<i class = "fa fa-times"></i>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">s
 									Order
 								</button>
 							</div>
@@ -534,32 +699,33 @@
 	</div>
 
 	<!-- Modal 6 -->
-	<div class = "popular_picks-modal modal fade" id = "popular_picks-Modal6" tabindex = "-1" aria-hidden = "true">
-		<div class = "modal-dialog">
-			<div class = "modal-content">
-				<div class = "close-modal" data-dismiss = "modal">
-					<div class = "lr">
-						<div class = "rl"></div>
+	<div class="popular_picks-modal modal fade" id="popular_picks-Modal6" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
 					</div>
 				</div>
-				<div class = "container">
-					<div class = "row">
-						<div class = "col-lg-8 mx-auto">
-							<div class = "modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
 								<!-- Pizza description -->
-								<h2 class = "text-uppercase">Pizza 1</h2>
-								<p class = "item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<h2 class="text-uppercase">Pizza 1</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 								<!-- d-block simply set an element’s display property to block(cover whole area) 
 									 mx-auto brings the element to cnter	-->
-								<img class = "img-fluid d-block mx-auto" src="Images/pizza2.jpg">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<img class="img-fluid d-block mx-auto" src="Images/pizza2.jpg">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
+									deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+									facere nemo!</p>
 								<!-- brings element on 1 row -->
-								<ul class = "list-inline">
+								<ul class="list-inline">
 									<li>Lorem : Epsum</li>
 									<li>Lorem : Epsum</li>
 								</ul>
-								<button class = "btn btn-primary" data-dismiss = "modal" type = "button">
-									<i class = "fa fa-times"></i>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									Order
 								</button>
 							</div>
@@ -570,17 +736,17 @@
 		</div>
 	</div>
 	<!-- Bootstrap core JS -->
-	<script src = "MISC/jquery/jquery.min.js"></script>
-	<script src = "MISC/bootstrap/js/bootstrap.bundle.min.js"></script>
-	
+	<script src="MISC/jquery/jquery.min.js"></script>
+	<script src="MISC/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 	<!-- Plugin JS -->
-	<script src = "MISC/jquery-easing/jquery.easing.min.js"></script>
+	<script src="MISC/jquery-easing/jquery.easing.min.js"></script>
 
 	<!-- Custom script -->
-	<script src = "JS/style.js"></script>
+	<script src="JS/style.js"></script>
 
 	<!-- comments -->
-	<script src = "JS/script1.js"></script>
+	<script src="JS/script1.js"></script>
 
 
 </body>
