@@ -63,16 +63,16 @@
                         <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                             <div class="payment-info">
                                 <h3>Personal Information</h3>
-                                <form>
+                                <form onsubmit = "myFn();">
                                     <div class="tab-for">
                                         <h5>EMAIL ADDRESS</h5>
                                         <input type="text" value="">
                                         <h5>FIRST NAME</h5>
                                         <input type="text" value="">
                                     </div>
-                                </form>
+                                </form >
                                 <h3 class="pay-title">Credit Card Info</h3>
-                                <form>
+                                <form onsubmit = "myFn();">
                                     <div class="tab-for">
                                         <h5>NAME ON CARD</h5>
                                         <input type="text" value="">
@@ -274,7 +274,7 @@
                                     <div class="user-login">
                                         <h2>Login</h2>
 
-                                        <form>
+                                        <form onsubmit = "myFn()">
                                             <input type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}"
                                                 required="">
                                             <input type="password" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}"
@@ -305,7 +305,7 @@
                             <div class="payment-info">
 
                                 <h3 class="pay-title">Dedit Card Info</h3>
-                                <form>
+                                <form onsubmit = "myFn()">
                                     <div class="tab-for">
                                         <h5>NAME ON CARD</h5>
                                         <input type="text" value="">
@@ -333,7 +333,7 @@
                                         <div class="clear"></div>
                                     </div>
                                     <input type="submit" value="SUBMIT">
-                                </form>
+                                </form onsubmit = "myFn()">
                                 <div class="single-bottom">
                                     <ul>
                                         <li>
@@ -352,6 +352,17 @@
 
         </div>
     </div>
+
+
+    <script>
+        function myFn() {
+            alert("Your order will be arrive soon!!");
+            // window.location.replace("http://stackoverflow.com");
+            window.document.location.href = "http://localhost/App/index.html";
+        }
+    </script>
+
+
 </body>
 
 </html>

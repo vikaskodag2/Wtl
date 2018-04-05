@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Dessert</title>
+    <link rel="stylesheet" href="CSS/list.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/drink.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button[class='cart']").click(function () {
+                alert('1 item added');
+            });
+        });
+    </script>
+    <script>
+        function insertOrder(id) {
+            $.ajax({
+                url: 'http://localhost/App/PHP/list.php',
+                data: { "id": id },
+                type: 'POST',
+                success: function (output) {
+                    alert(output);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body bgcolor="black">
+
+    <div class="header">
+        <a href="list.html">
+            <button class="tablink">Pizza</button>
+        </a>
+        <a href="meals.html">
+            <button class="tablink">Meals</button>
+        </a>
+        <a href="drink.html">
+            <button class="tablink">Drinks</button>
+        </a>
+        <a href="dessert.html">
+            <button class="tablink">Dessert</button>
+        </a>
+        <a href="feedback.html">
+            <button class="tablink">Feedback</button>
+        </a>
+        <a href="login.html">
+            <button class="tablink">Login Here</button>
+        </a>
+    </div>
+
+    <pre>Try our new range of exciting sides - appetisers & pastas along with your favourite pizzas.</pre>
+    <br>
+    <br>
+    <br>
+
+    <table cellspacing="5">
+        <tr>
+            <td>
+                <div id="item1" style="width:410px;height:480px;background-color:grey;opacity:1.5;">
+                    <img src="Images/chocotruffle.png" title="Chocotruffle" />
+                    <div>Choco Truffle</div>
+                    <div class="des">Classic Favourite. Rich Choco Cake</div>
+                    <i id="rs" />89Rs
+                    <br>
+                    <button name="Choco Truffle" id="301" class="cart">Order Now</button>
+                </div>
+            </td>
+            <td>
+                <div id="item2" style="width:410px;height:480px;background-color:grey;opacity:1.5;">
+                    <img src="Images/chocovolcano.png" title="Chocovolcano" />
+                    <div>Choco Volcano</div>
+                    <div class="des">Choco Delight With A Gooey Chocolate Volcano Centre</div>
+                    <i id="rs" />89Rs
+                    <br>
+                    <button name="Choco Volcano" id="302" class="cart">Order Now</button>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</body>
+
+</html>

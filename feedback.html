@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Here is suggestions | Your suggestions are very important to us</title>
+    <link rel="stylesheet" href="CSS/feedback.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/drink.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button[class='cart']").click(function () {
+                alert('1 item added');
+            });
+        });
+    </script>
+
+</head>
+
+<body bgcolor="black">
+
+    <div class="header">
+        <a href="list.html">
+            <button class="tablink">Pizza</button>
+        </a>
+        <a href="meals.html">
+            <button class="tablink">Meals</button>
+        </a>
+        <a href="drink.html">
+            <button class="tablink">Drinks</button>
+        </a>
+        <a href="dessert.html">
+            <button class="tablink">Dessert</button>
+        </a>
+        <a href="feedback.html">
+            <button class="tablink">Feedback</button>
+        </a>
+        <a href="login.html">
+            <button class="tablink">Login Here</button>
+        </a>
+    </div>
+
+
+    <pre><i style="font-family:monospace; font-size:20; color:white">Feedback
+<br>We value your opinion and welcome your feedback. Kindly fill the appropriate form
+<br>At Pizza Hut, we want you to have the best times around the best pizzas!
+</i><pre>
+
+<form action="#" method="get" name="form1" id="form1"> 
+<br>Username:	<input type="text" name="t1" id="t1" size="15" maxlength="20" value="Enter your name">
+<br>Email-Id:	<input type="text" name="t2" id="t2" size="15" maxlength="20"  value="Your Email Here" >
+
+<br><input type="radio" name="q" id="1"> I had an unsatisfactory experience
+<br><input type="radio" name="q" id="2"> I had an great experience
+
+<br>I would like to share feedback about :
+<select name="service" id="service" value="type of service">
+	<option>Select one from list below</option>
+	<option>Hygiene</option>
+	<option>Product Quality</option>
+	<option>Online Order</option>
+	<option>Speed</option>
+</select>
+
+<br>Was the food to your liking?
+<input type="radio" name="like1" id="l1"> Yes
+<input type="radio" name="like2" id="l2"> No
+
+<br>Will you visit Pizza Hut again in the near future? 
+<input type="radio" name="again1" id="a1"> Yes
+<input type="radio" name="again2" id="a2"> No
+
+<br>Was the restaurant clean? 		
+<input type="radio" name="clean1" id="a1"> Yes
+<input type="radio" name="clean2" id="a2"> No 	
+<br>
+<button class="submit" >Submit</button>
+<button class="reset" >Reset</button>
+</form>
+
+</body>
+</html>

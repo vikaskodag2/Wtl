@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Drinks</title>
+    <link rel="stylesheet" href="CSS/list.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/drink.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button[class='cart']").click(function () {
+                alert('1 item added');
+            });
+        });
+    </script>
+
+    <script>
+        function insertOrder(id) {
+            // alert('1 item added');
+            $.ajax({
+                url: 'http://localhost/App/PHP/list.php',
+                data: { "id": id },
+                type: 'POST',
+                success: function (output) {
+                    alert(output);
+                }
+            });
+            alert('1 item added');
+        }
+    </script>
+</head>
+
+<body bgcolor="black">
+
+    <div class="header">
+        <br>
+        <a href="list.html">
+            <button class="tablink">Pizza</button>
+        </a>
+        <a href="meals.html">
+            <button class="tablink">Meals</button>
+        </a>
+        <a href="drink.html">
+            <button class="tablink">Drinks</button>
+        </a>
+        <a href="dessert.html">
+            <button class="tablink">Dessert</button>
+        </a>
+        <a href="feedback.html">
+            <button class="tablink">Feedback</button>
+        </a>
+        <a href="login.html">
+            <button class="tablink">Login Here</button>
+        </a>
+    </div>
+
+    <pre>Drinks for every occasion at an irresistible price.</pre>
+    <br>
+    <br>
+    <br>
+
+    <table cellpadding="5" cellspacing="10">
+        <tr>
+
+            <td>
+                <div id="item1" style="width:410px;height:480px;background-color:grey;opacity:1.5;">
+                    <img src="Images/7up.png" title="7up" />
+                    <div>7 Up</div>
+                    <div class="des">Soft Drink</div>
+                    <i id="rs" />57Rs
+                    <br>
+                    <button name="7up" id="201" class="cart" onClick="insertOrder(this.id)">Order Now</button>
+                </div>
+            </td>
+            <td>
+                <div id="item2" style="width:410px;height:480px;background-color:grey;opacity:1.5;">
+                    <img src="Images/mirinda.png" title="Mirinda" />
+                    <div>Mirinda</div>
+                    <div class="des">Soft Drink</div>
+                    <i id="rs" />57Rs
+                    <br>
+                    <button name="Mirinda" id="202" class="cart" onClick="insertOrder(this.id)">Order Now</button>
+                </div>
+            </td>
+            <td>
+                <div id="item3" style="width:410px;height:480px;background-color:grey;opacity:1.5;">
+                    <img src="Images/pepsi.png" title="Pepsi" />
+                    <div>Pepsi</div>
+                    <div class="des">Contains Caffeine</div>
+                    <i id="rs" />57Rs
+                    <br>
+                    <button name="Pepsi" id="102" class="cart" onClick="insertOrder(this.id)">Order Now</button>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</body>
+
+</html>

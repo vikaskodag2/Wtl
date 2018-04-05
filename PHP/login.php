@@ -10,7 +10,6 @@
 	if (!mysql_query($sql,$con)) {
 	  die('Error: ' . mysql_error());
 	}
-	echo "McDonalds,Welcomes you " .$id;
-    
+
     mysql_close($con)
 ?>

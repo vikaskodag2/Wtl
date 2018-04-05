@@ -36,6 +36,16 @@ a:focus {
     text-align: center;
 }
 
+/* table,
+td,
+th {
+    border-collapse: separate
+} */
+
+/* table {
+    border-spacing: 6px
+} */
+
 pre {
     color: white;
     text-align: center;
